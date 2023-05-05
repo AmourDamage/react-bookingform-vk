@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.wrapper {
+  max-width: 1280px;
+  background: #000000;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bookingform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 200px;
+  gap: 20px;
 }
+
+.buttons__container {
+  display: flex;
+  gap: 30px;
+}
+
+.bookingform-select__wrapper {
+  display: flex;
+  align-items: center;
+ 
+}
+
+.bookingform__select {
+  margin-left: 20px;
+}
+
+.bookingform__input {
+  margin-left: 20px;
+}
+
+.bookingform__label {
+  width: 150px;
+  display: block;
+}
+
