@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-bookingform-vk/static/css/main.a3bf42b0.css",
+    "main.js": "/react-bookingform-vk/static/js/main.08113ffc.js",
+    "index.html": "/react-bookingform-vk/index.html",
+    "main.a3bf42b0.css.map": "/react-bookingform-vk/static/css/main.a3bf42b0.css.map",
+    "main.08113ffc.js.map": "/react-bookingform-vk/static/js/main.08113ffc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3bf42b0.css",
+    "static/js/main.08113ffc.js"
+  ]
+}
