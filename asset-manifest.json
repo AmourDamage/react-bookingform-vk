@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-bookingform-vk/static/css/main.a3bf42b0.css",
-    "main.js": "/react-bookingform-vk/static/js/main.08113ffc.js",
+    "main.css": "/react-bookingform-vk/static/css/main.05d93f7e.css",
+    "main.js": "/react-bookingform-vk/static/js/main.b53f86c3.js",
     "index.html": "/react-bookingform-vk/index.html",
-    "main.a3bf42b0.css.map": "/react-bookingform-vk/static/css/main.a3bf42b0.css.map",
-    "main.08113ffc.js.map": "/react-bookingform-vk/static/js/main.08113ffc.js.map"
+    "main.05d93f7e.css.map": "/react-bookingform-vk/static/css/main.05d93f7e.css.map",
+    "main.b53f86c3.js.map": "/react-bookingform-vk/static/js/main.b53f86c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3bf42b0.css",
-    "static/js/main.08113ffc.js"
+    "static/css/main.05d93f7e.css",
+    "static/js/main.b53f86c3.js"
   ]
 }
