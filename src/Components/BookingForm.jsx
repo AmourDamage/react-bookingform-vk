@@ -24,6 +24,7 @@ const BookingForm = () => {
     };
     let json = JSON.stringify(formData);
     console.log(json);
+    alert('Форма отправлена !');
   };
 
   const handleClear = () => {
