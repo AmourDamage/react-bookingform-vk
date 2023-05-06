@@ -5,10 +5,17 @@
   color: white;
   display: flex;
   justify-content: center;
+  
 }
 
 .header__title {
   margin-bottom: 200px;
+}
+
+.header__subtitle {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .bookingform {
@@ -17,11 +24,10 @@
   align-items: center;
   flex-direction: column;
   gap: 20px;
-}
 
-.buttons__container {
-  display: flex;
-  gap: 30px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 40px;
+  border-radius: 5%;
 }
 
 .bookingform-select__wrapper {
@@ -41,5 +47,10 @@
 .bookingform__label {
   width: 150px;
   display: block;
+}
+
+.buttons__container {
+  display: flex;
+  gap: 30px;
 }
 

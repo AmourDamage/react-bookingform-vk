@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 import { Select, Input, Button } from 'antd';
+
 const { TextArea } = Input;
 
 const BookingForm = () => {
@@ -11,6 +12,16 @@ const BookingForm = () => {
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
   const [comment, setComment] = useState('');
+  const towerData = ['A', 'B'];
+  const floorsData = [];
+  const roomData = [];
+  for (let i = 3; i <= 28; i++) {
+    floorsData.push(i);
+  }
+
+  for (let i = 1; i <= 10; i++) {
+    roomData.push(i);
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -72,8 +83,13 @@ const BookingForm = () => {
           value={tower}
           onChange={handleTowerChange}>
           <Select.Option value="">Выбрать</Select.Option>
-          <Select.Option value="A">A</Select.Option>
-          <Select.Option value="B">B</Select.Option>
+          {towerData.map((item, index) => {
+            return (
+              <Select.Option key={index} value={item}>
+                {item}
+              </Select.Option>
+            );
+          })}
         </Select>
       </div>
 
@@ -85,11 +101,9 @@ const BookingForm = () => {
           value={floor}
           onChange={handleFloorChange}>
           <Select.Option value="">Выбрать</Select.Option>
-          {[...Array(25)].map((item, i) => (
-            <Select.Option key={i} value={i + 3}>
-              {i + 3}
-            </Select.Option>
-          ))}
+          {floorsData.map((item, index) => {
+            return <Select.Option key={index} value={item}></Select.Option>;
+          })}
         </Select>
       </div>
 
@@ -101,11 +115,9 @@ const BookingForm = () => {
           value={room}
           onChange={handleRoomChange}>
           <Select.Option value="">Выбрать</Select.Option>
-          {[...Array(10)].map((item, i) => (
-            <Select.Option key={i} value={i + 1}>
-              {i + 1}
-            </Select.Option>
-          ))}
+          {roomData.map((item, index) => {
+            return <Select.Option key={index} value={item}></Select.Option>;
+          })}
         </Select>
       </div>
 
@@ -135,15 +147,20 @@ const BookingForm = () => {
         <label className="bookingform__label">Комментарий</label>
         <TextArea
           placeholder="Введите комментарий"
-          rows={3}
+          rows={4}
           value={comment}
           onChange={handleInputCommentChange}
         />
       </div>
       <div className="buttons__container">
-        <Button type="primary" onClick={handleSubmit}>
+        <Button
+          style={{ color: 'white' }}
+          disabled={!tower || !floor || !room || !date || !time || !comment}
+          type="primary"
+          onClick={handleSubmit}>
           Отправить
         </Button>
+
         <Button type="primary" onClick={handleClear}>
           Очистить
         </Button>
